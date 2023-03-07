@@ -1,5 +1,5 @@
 # A Simpler Way of Dumping Modules Needed for Sleirsgoevy's ROP Compiler
-## message from March 6th, 2023. I'll be updating this code tomorrow, and I'll make sure to add the host exe. The updated code will support remote code execution. Please wait before using this code.
+## If you don't want to dump the modules yourself, just download the "dumps.rar" archive, which contains dumped modules.
 
 I encountered difficulties with Sleirsgoevy's method when attempting to dump the necessary modules for setting up the ROP compiler. Despite following the instructions shown after running the `make` command, I was unable to access the "supposedly" hosted page on the specified port when navigating on the PS4 browser. 
 
