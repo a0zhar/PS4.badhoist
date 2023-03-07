@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+  <meta charset="utf-8">
+  <title>A0zhar's PS4 FW 6.72 Webkit Exploit</title>
+  <link rel="stylesheet prefetch" href="/themes/DarkH0st/style.css">
+  <script src="/themes/DarkH0st/common/exploit.js"></script>
+  <script src="/themes/DarkH0st/common/helpers.js"></script>
+  <script src="/themes/DarkH0st/common/rop.js"></script>
+  <script src="/themes/DarkH0st/common/syscalls.js"></script>
+
+</head>
+
+<body>
+  <div class="mainpart">
+    <h1 id="logo">Hello :)</h1>
+  </div>
+  
+  <script src="/themes/DarkH0st/functions.js"></script>
+  <script src="/themes/DarkH0st/dumper.js"></script>
+
+  <button onclick="dumpModule(webkit_base, webkitSize, 'webkit');">Dump Webkit</button>
+  <button onclick="dumpModule(libkernel_base, libKernelSize, 'libkernel');">Dump LibKernel</button>
+  <button onclick="dumpModule(libc_base, libcSize, 'libc');">Dump Libc</button>
+
+  <script>
+    printf("[+] LibKernel:" + hexNum(libkernel_base));
+    printf("[+] Libc:" + hexNum(libc_base));
+    printf("[+] WebKit:" + hexNum(webkit_base));
+    printf("[+] SaveAll:" + hexNum(saveall_addr));
+    printf("[+] LoadAll:" + hexNum(loadall_addr));
+    printf("[+] SetJMP:" + hexNum(setjmp_addr));
+    document.body.appendChild(privDebugElement);
+  </script>
+</body>
+
+</html>
