@@ -1,6 +1,7 @@
 # A Simpler Way of Dumping Modules Needed for Sleirsgoevy's ROP Compiler
+## message from March 6th, 2023. I'll be updating this code tomorrow, and I'll make sure to add the host exe. The updated code will support remote code execution. Please wait before using this code.
 
-I encountered difficulties with Sleirsgoevy's method when attempting to dump the necessary modules for setting up the ROP compiler. Despite following the instructions shown after running the `make` command, I was unable to access the "supposedly" hosted page on the specified port when navigating on the PS4 browser.
+I encountered difficulties with Sleirsgoevy's method when attempting to dump the necessary modules for setting up the ROP compiler. Despite following the instructions shown after running the `make` command, I was unable to access the "supposedly" hosted page on the specified port when navigating on the PS4 browser. 
 
 To resolve this, I examined Sleirsgoevy's approach when dumping the module and remade it entirely using JavaScript, a language that is superior to Python. This revised approach has been successful for me, and I am pleased to share it with others who may be struggling to dump the required modules.
 
