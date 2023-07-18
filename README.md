@@ -1,6 +1,21 @@
 # A Simpler Way of Dumping Modules Needed for Sleirsgoevy's ROP Compiler
 
-If you have difficulties with Sleirsgoevy's method of dumping the necessary modules for setting up the ROP compiler, you can download the "dumps.rar" archive that contains already dumped modules. Alternatively, follow these steps for an automated and successful approach:
+If you are having difficulties with Sleirsgoevy's method of dumping the necessary modules for setting up the ROP compiler, you can download the "dumps.rar" archive that contains the already dumped modules. Alternatively, follow these steps for an automated and successful approach:
+
+## Announcement (18/07/2023)
+**New Dumping Method, which is faster and more efficient, coming soon!**
+
+## Files Required for Building ROP-chain using Sleirsgoevy's method are as follows (for firmware 6.72):
+- gadgets.txt (contents of `webkit-gadgets.txt` and `libc-gadgets.txt` combined into one file)
+- libc.bin (decrypted sprx module)
+- libc.elf
+- libc-gadgets.txt
+- libkernel.bin (decrypted sprx module)
+- libkernel.elf
+- syscalls.txt (var syscallxxx_addr = libkernel_base + xxxx)
+- webkit-gadgets.txt
+- webkit.bin (decrypted sprx module)
+- webkit.elf
 
 ## Instructions
 
