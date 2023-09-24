@@ -1,4 +1,4 @@
-# A Simpler Way of Dumping Modules Needed for Sleirsgoevy's ROP Compiler
+# Dumping the webkit, libkernel, and libc Modules loaded in webprocess of ps4 6.72 from the browser over to pc, using JS instead of Python.  
 
 If you are having difficulties with Sleirsgoevy's method of dumping the necessary modules for setting up the ROP compiler, you can download the "dumps.rar" archive that contains the already dumped modules. Alternatively, follow these steps for an automated and successful approach:
 
